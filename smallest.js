@@ -14,5 +14,22 @@ function smallestNum(num1, num2, num3) {
 	}
 }
 
+// smallestNum(200,67,8);
 
-smallestNum(200,67,8);
+// === smallest number from an array
+
+// let array = [4,56,77,22];
+
+function smallestNumArray(array) {
+	let small = array[0];
+	for (var i = 0; i < array.length; i++) {
+		if (array[i] < small) {
+			small = array[i];
+		}
+	}
+	return small
+}
+
+print("smallest is:",smallestNumArray([2,11,545,6,-2]));
+
+// =====
